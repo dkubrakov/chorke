@@ -1,0 +1,17 @@
+dn: ou=krb5,dc=chorke,dc=org
+ou: krb5
+objectClass: organizationalUnit
+
+dn: cn=kdc-srv,ou=krb5,dc=chorke,dc=org
+cn: kdc-srv
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+description: Default bind DN for the Kerberos KDC server
+userPassword: chorkeinc
+
+dn: cn=adm-srv,ou=krb5,dc=chorke,dc=org
+cn: adm-srv
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+description: Default bind DN for the Kerberos Administration server
+userPassword: chorkeinc
